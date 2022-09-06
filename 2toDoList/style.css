@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS";
+  transition: 0.2s ease;
+  color: lightgray;
+}
+body {
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #eadebb;
+}
+h1 {
+  color: white;
+  text-shadow: 0 -1px 4px white, 0 -2px 10px rgb(225, 215, 144),
+    0 -10px 20px rgb(167, 125, 46), 0 -18px 40px #f00;
+}
+::placeholder {
+  text-transform: uppercase;
+  background: transparent;
+}
+form {
+  background: #333333;
+  width: 90%;
+  height: fit-content;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px black;
+}
+
+input[type="text"] {
+  background: #eadebb;
+  padding: 5px;
+  color: #333333;
+}
+p {
+  position: relative;
+}
+p:hover {
+  cursor: pointer;
+}
+p:hover::after {
+  opacity: 1;
+}
+p::after,
+.checked:hover::after {
+  transition: 0.5s ease;
+  position: absolute;
+  font-size: 0.9rem;
+  color: #eadebb;
+  right: -80px;
+}
+p::after {
+  content: "(terminer)";
+  opacity: 0;
+}
+.checked {
+  text-decoration: line-through;
+}
+.checked:hover::after {
+  content: "(supprimer)";
+}
+*::selection {
+  background: black;
+  color: yellow;
+}
+#submitNote {
+  padding: 15px 40px;
+  background: #eadebb;
+  color: black;
+  border: 1px solid #333333;
+  border-radius: 5px;
+}
+#submit:hover {
+  box-shadow: inset 0px 0 3px #1f1f1f;
+  transform: scale(1.1);
+}

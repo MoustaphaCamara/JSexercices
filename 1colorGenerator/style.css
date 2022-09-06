@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS";
+  align-items: center;
+  transition: 1s ease;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  background: rgba(29, 29, 29, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
